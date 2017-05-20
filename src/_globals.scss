@@ -1,0 +1,111 @@
+// Can't use the nice '~react-md/src/scss/react-md' since this isn't being bundled with webpack
+@import '../node_modules/react-md/src/scss/react-md';
+
+
+$md-primary-color: rgba(142, 124, 197, 1);
+$md-secondary-color: rgba(142, 124, 197, 1);
+$md-font-family: Ubuntu;
+@include react-md-everything;
+
+@mixin centerpage {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+
+.infocard {
+
+	@include centerpage;
+	max-width: 600px;
+    background-image: linear-gradient(rgba(145, 128, 187, 1), rgba(208, 200, 228, 1));
+    //background-color: $md-deep-purple-a-100;
+
+    .infofield{
+    	margin-bottom: 10px;
+    	// background-image: linear-gradient(rgba(184, 56, 216, 0.35), rgba(159, 40, 189, 0.77));
+    	div {
+    		padding: 3 5; // make sure there's room to breathe
+    	}
+
+    	.infopaper{
+    		color: white;
+    		input {
+    			color: white;
+    		}
+    	}
+    }
+
+    .react-gravatar{
+		margin: auto;
+		border-radius: 50%;
+	}
+
+	.ButtonRight{
+		right: 8px;
+		position: absolute;
+		font-size: 10px;
+	}
+
+	.ButtonLeft{
+		left: 8px;
+		position: absolute;
+		font-size: 10px;
+	}
+
+	.TextInput{
+		background-color: $md-secondary-color;
+	}
+
+	.centertitle{
+		h2 {
+			font-family: Ubuntu;
+			margin-left: auto;
+			margin-right: auto;
+			color: #674EA7;
+			font-size: 35px;
+		}
+	}
+
+	p {
+		font-family: Ubuntu;
+	}
+}
+
+.fullgradient {
+	background-image: linear-gradient(rgba(208, 200, 228, 1), rgba(145, 128, 187, 1));
+}
+
+.solidpaper {
+	background-color: $md-secondary-color;
+}
+
+.fixedFooter {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.centerinputs {
+	input {
+		text-align: center;
+	}
+}
+
+.md-title--toolbar {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 32px;
+}
+
+.greeting {
+  left: 50%;
+  margin: 1em;
+  max-width: 320px;
+  position: absolute;
+  top: 50%;
+
+  width: 100%;
+}
