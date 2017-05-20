@@ -5,6 +5,7 @@ import CardTitle from "react-md/lib/Cards/CardTitle";
 import CardActions from "react-md/lib/Cards/CardActions";
 import CardText from "react-md/lib/Cards/CardText";
 import Media from "react-md/lib/Media";
+import './Getcard.css';
 /* eslint-enable */
 
 const metaimg = "/img/meta2.png";

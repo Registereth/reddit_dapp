@@ -13,7 +13,9 @@ import Showcard from "./Showcard.js";
 import Regcard from "./Regcard.js";
 import ThanksFooter from "./ThanksFooter.js";
 import {GetCoinbase, CheckGetweb3, CheckTransaction, ParseOutNameAddr } from "./DappUtils.js";
+
 /* esling-enable */
+
 
 const NETWORK = {
 	MAINNET:"1",

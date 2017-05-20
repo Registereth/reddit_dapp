@@ -18,13 +18,14 @@ $md-font-family: Ubuntu;
 .infocard {
 
 	@include centerpage;
-	max-width: 600px;
+	  width: 600px;
+    height: 400px;
     background-image: linear-gradient(rgba(145, 128, 187, 1), rgba(208, 200, 228, 1));
     //background-color: $md-deep-purple-a-100;
 
     .infofield{
     	margin-bottom: 10px;
-    	// background-image: linear-gradient(rgba(184, 56, 216, 0.35), rgba(159, 40, 189, 0.77));
+    	//background-image: linear-gradient(rgba(184, 56, 216, 0.35), rgba(159, 40, 189, 0.77));
     	div {
     		padding: 3 5; // make sure there's room to breathe
     	}
@@ -45,28 +46,20 @@ $md-font-family: Ubuntu;
 	.ButtonRight{
 		right: 8px;
 		position: absolute;
-		font-size: 10px;
+		//font-size: 10px;
 	}
 
 	.ButtonLeft{
 		left: 8px;
 		position: absolute;
-		font-size: 10px;
+		//font-size: 10px;
 	}
 
 	.TextInput{
 		background-color: $md-secondary-color;
+    font-size: 18px;
 	}
 
-	.centertitle{
-		h2 {
-			font-family: Ubuntu;
-			margin-left: auto;
-			margin-right: auto;
-			color: #674EA7;
-			font-size: 35px;
-		}
-	}
 
 	p {
 		font-family: Ubuntu;
@@ -81,12 +74,6 @@ $md-font-family: Ubuntu;
 	background-color: $md-secondary-color;
 }
 
-.fixedFooter {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
 
 .centerinputs {
 	input {
@@ -94,11 +81,6 @@ $md-font-family: Ubuntu;
 	}
 }
 
-.md-title--toolbar {
-	margin-right: auto;
-	margin-left: auto;
-	font-size: 32px;
-}
 
 .greeting {
   left: 50%;
