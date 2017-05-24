@@ -94,7 +94,7 @@ class Web3wrapper extends Component {
 		console.log("show me the probel",web3, coinbase, passonlocation, web3.version.network);
 		if(!web3 || !coinbase || web3.version.network!==NETWORK.RINKEBY ){ // no web3 so we show them the getcard FIXME this needs to be set to 1 for mainnet
 			return (
-				<Getcard /> //web3 = {!web3} loggedIn ={!coinbase}
+				<Getcard web3present={!!web3} coinbasepresent={!!coinbase} wrongnet={web3.version.network!==NETWORK.RINKEBY}/> //web3 = {!web3} loggedIn ={!coinbase}
 			)
 		} else{
 			return (
